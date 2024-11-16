@@ -1,7 +1,7 @@
 // Middleware to check authentication
 
 import { verifyJwt } from "../utils/jwt.js";
-//import { doesUserExists } from "../services/UserService.js";
+//import { doesUserExists } from "../services/UserService.js"; 
 export const isAuthenticated=async(req,res,next)=>{
 const token=req.headers["x-access-token"] 
 if(!token)
