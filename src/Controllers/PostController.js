@@ -1,7 +1,7 @@
 import cloudinary from "../config/Cloudinary.js";  // Ensure this is configured correctly
 import fs from 'fs';  // To delete the local file after upload
 import { createPostService, FindByIdService } from "../services/PostService.js";
-import { findAllPostService } from "../services/PostService.js";
+import { findAllPostService } from "../services/PostService.js"; 
 async function CreatePost(req, res) {
   try {
     // Ensure that both file and caption are provided
