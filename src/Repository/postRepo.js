@@ -4,7 +4,7 @@ export const CreatePostRepo=async(caption, image,user)=>{
  try{
     const newPost=await PostSchema.create({image,caption,user})
     return newPost
- }
+ } 
  catch(error)
  {
     console.log(error)
